@@ -1,0 +1,56 @@
+    body {
+        background: url('space_back.webp') no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        min-height: 100vh;
+        position: relative;
+    }
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(26, 26, 46, 0.8) 0%, rgba(22, 33, 62, 0.8) 100%);
+        z-index: -1;
+    }
+    .card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: #fff;
+    }
+    .card-title {
+        color: #00a256;
+    }
+    .btn-primary {
+        background-color: #00a256;
+        border-color: #00a256;
+    }
+    .btn-primary:hover {
+        background-color: #00a256;
+        border-color: #00a256;
+    }
+    .btn-secondary {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+    .btn-secondary:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+    .navbar {
+        background: rgba(0, 0, 0, 0.3) !important;
+        backdrop-filter: blur(10px);
+    }
+    .text-primary {
+        color: #00a256 !important;
+    }
+    .text-primary:hover {
+        color: #00a256 !important;
+    }
+    .footer {
+        background: rgba(0, 0, 0, 0.5) !important;
+        backdrop-filter: blur(10px);
+    }
