@@ -1,4 +1,4 @@
-const OPENAI_API_KEY = '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';
+const OPENAI_API_KEY = '';
 
 let currentCandidates = [];
 
@@ -62,7 +62,7 @@ async function evaluateCandidates(candidates) {
         `#${candidate.originalIndex + 1} ${candidate.name} (${candidate.age} years, ${candidate.country})`
     ).join('\n');
 
-    const prompt = `Evaluate these candidates for the role of astronaut based on their profiles. Consider factors like age, gender, and country of origin. Provide a detailed analysis and recommend the top 5 candidates. Alo somtimes make funny and unserious reasons for them to be astronauts.
+    const prompt = `Evaluate these candidates for the role of astronaut based on their profiles. Consider factors like age, gender, and country of origin. Provide a detailed analysis and recommend the top 5 candidates. Alo sometimes make funny and unserious reasons for them to be astronauts.Always make only 1 list of candidates.
 
     Candidates:
     ${candidatesList}
