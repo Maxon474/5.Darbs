@@ -179,15 +179,15 @@ function updateStatistics() {
     countriesList.innerHTML = html;
 }
 
-// Функция для создания и скачивания ZIP файла
+// function to create and download ZIP file
 async function downloadCandidatesZip() {
     const zip = new JSZip();
     
-    // Создаем JSON файл со всеми кандидатами
+    // create JSON file with all candidates
     const candidatesJson = JSON.stringify(currentCandidates, null, 2);
     zip.file("candidates.json", candidatesJson);
     
-    // Создаем текстовый файл с информацией о кандидатах
+    // create text file with information about candidates
     let txtContent = "Astronaut Candidates List\n\n";
     currentCandidates.forEach((person, index) => {
         txtContent += `Candidate #${person.originalIndex + 1}\n`;
